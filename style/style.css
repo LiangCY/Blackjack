@@ -6,6 +6,11 @@
 html, body {
     height: 100%;
     background: #00CC88;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .main {
@@ -110,11 +115,8 @@ img {
     border: 2px solid #999;
 }
 
-#panel .deal .bet {
-    margin-top: 12px;
-}
-
 #panel .deal .bet .score {
+    margin-top: 12px;
     display: inline-block;
     float: left;
     width: 28px;
