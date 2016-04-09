@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    background: #00CC88;
+}
+
+.main {
+    height: 100%;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    position: absolute;
+    max-height: 60%;
+}
+
+#dealer {
+    height: 40%;
+    position: relative;
+}
+
+#player {
+    height: 40%;
+    position: relative;
+}
+
+.sum {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#player .cards {
+}
+
+#player .actions {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    margin-left: -128px;
+}
+
+#player .actions .button {
+    display: inline-block;
+    float: left;
+    width: 80px;
+    height: 40px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 60px;
+    border: 2px solid #666;
+    background: #FF751A;
+    color: white;
+    font-weight: bold;
+    box-sizing: border-box;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+#player .actions .button:nth-child(n+2) {
+    margin-left: 8px;
+}
+
+#player .actions .button:hover {
+    background: #FF6600;
+}
+
+#panel {
+    height: 20%;
+    position: relative;
+}
+
+#panel .deal {
+    position: absolute;
+    left: 16px;
+    bottom: 12px;
+}
+
+#panel .deal #deal {
+    color: #FF751A;
+    background: #FFF;
+    margin-left: 36px;
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    border: 2px solid #FF751A;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#panel #deal:hover {
+    background: #F6F6F6;
+}
+
+#panel #deal.disabled {
+    cursor: default;
+    background: #DDD;
+    color: #BBB;
+    border: 2px solid #999;
+}
+
+#panel .deal .bet {
+    margin-top: 12px;
+}
+
+#panel .deal .bet .score {
+    display: inline-block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    background: #475AFF;
+    color: white;
+    border: 2px solid white;
+}
+
+#panel .deal .bet .score:nth-child(n+2) {
+    margin-left: 10px;
+}
+
+#panel #stakes {
+    font-size: 1.4rem;
+    position: absolute;
+    bottom: 72px;
+    right: 24px;
+    color: #FFD633;
+}
+
+#panel #score {
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    right: 12px;
+    bottom: 16px;
+    color: #FFED47;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    background: rgba(50, 50, 50, 0.5);
+    visibility: hidden;
+}
+
+#result {
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -100px;
+    position: absolute;
+    width: 200px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 1.6rem;
+    background: white;
+    box-shadow: 4px 4px 16px black;
+}

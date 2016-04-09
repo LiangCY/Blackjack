@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>21点</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main">
+    <div id="dealer">
+        <div class="cards"></div>
+        <div class="sum"></div>
+    </div>
+    <div id="player">
+        <div class="cards"></div>
+        <div class="sum"></div>
+        <div class="actions">
+            <div id="hit" class="button">Hit</div>
+            <div id="stand" class="button">Stand</div>
+            <div id="double" class="button">Double</div>
+        </div>
+    </div>
+    <div id="panel">
+        <div class="deal">
+            <div id="deal" class="disabled">DEAL</div>
+            <div class="bet">
+                <div class="score" id="score-5">5</div>
+                <div class="score" id="score-10">10</div>
+                <div class="score" id="score-20">20</div>
+                <div class="score" id="score-50">50</div>
+            </div>
+        </div>
+        <div id="stakes">0</div>
+        <div id="score"></div>
+    </div>
+    <div id="overlay">
+        <div id="result"></div>
+    </div>
+</div>
+<script src="dist/app.js"></script>
+</body>
+</html>
